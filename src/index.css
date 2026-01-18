@@ -90,5 +90,49 @@
 
     --border: 217 33% 20%;
   }
+}
 
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+
+  /* Adding Media Queries */
+
+  @media (width >= 640px) {
+    max-width: 640px;
+  }
+  @media (width >= 768px) {
+    max-width: 768px;
+  }
+  @media (width >= 1024px) {
+    max-width: 1024px;
+  }
+  @media (width >= 1280px) {
+    max-width: 1280px;
+  }
+  @media (width >= 1400px) {
+    max-width: 1400px;
+  }
+}
+
+@utility text-glow {
+  @apply relative;
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+}
+
+@utility card-hover {
+  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
+}
+
+@utility gradient-border {
+  @apply relative rounded-md;
+  background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
+  background-clip: padding-box;
+  border: 1px solid transparent;
+}
+
+@utility cosmic-button {
+  @apply px-6 py-2 ronded-full bg-primary text-primary-foreground font-medium
+         transition all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
+         hover:scale-105 active:scale-95;
 }
