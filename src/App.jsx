@@ -1,4 +1,6 @@
-import { BrowserRouter } from "react-router-dom";
+// import { BrowserRouter } from "react-router-dom";                [original]
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";   // from gemini
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
 
