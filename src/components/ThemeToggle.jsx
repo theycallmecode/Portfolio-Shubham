@@ -34,7 +34,6 @@ export const ThemeToggle = () => {
 
     return (
         <button onClick={toggleTheme}>
-            {" "}
             {isDarkMode ? (
                 <Sun className="h-6 w-6 text-yellow-300" />
                 ) : (
