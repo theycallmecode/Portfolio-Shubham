@@ -1,5 +1,5 @@
 import {cn} from "@/lib/utils";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const navItems = [ // Navigation items for the Navbar
     {name: "Home", href: "#Shubham"},
